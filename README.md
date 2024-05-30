@@ -1,17 +1,21 @@
 # evil-php
-什么？PHP环境运行太过稳定，无事可做？千篇一律的日常开发毫无挑战？想体验不知何时发生未知BUG的恐惧？
 
-把本项目引入你们的项目吧，你们的项目会有但不仅限于如下的神奇效果：
+*Read this in other languages: [English](README.md), [中文](README.cn.md).*
 
-* `var_dump` 在周末时，会有10%的概率返回`NULL`。
-* `in_array` 当数组长度可以被7整除时，永远返回`false`。
-* `array_map` 在周日时，方法的结果总是会丢失最后一个元素。
-* `array_filter` 返回值有50%的概率丢失最后一个元素。
-* `sleep` 总是会比预期时间慢1秒才触发。
-* `strtotime` 的结果总是会慢7分钟。
-* `json_encode` 会把I(大写字母I)变成l(小写字母L)。
-* `substr` 有50%几率返回空字符串。
-* `mb_strlen` 有50%几率返回0。
+
+What? The PHP environment runs too stable with nothing to do? The routine daily development is devoid of challenges? Want to experience the fear of unknown bugs occurring at any time?
+
+Use this extension into your own project, you will witness the following magical effects:
+
+* `var_dump` has a 10% chance of returning `NULL` on weekends.
+* `in_array` always returns `false` when the array length is divisible by 7.
+* `array_map` always loses the last element of the method result on Sundays.
+* `array_filter` has a 50% chance of losing the last element in the return value.
+* `sleep` always triggers one second slower than the expected time.
+* The result of `strtotime` is always 7 minutes slow.
+* `json_encode` will turn I (uppercase letter I) into l (lowercase letter L).
+* `substr` has a 50% chance of returning an empty string.
+* `mb_strlen` has a 50% chance of returning 0.
 * ...
 
 ## Install
@@ -60,6 +64,6 @@ function user_sleep()
 
 user_sleep();
 ```
-### 严正声明⚠️
+### Solemn Declaration⚠️
 
-**本包仅供PHP扩展爱好者学习交流使用哦，包的作者不参与注入，因引入本包造成的损失本包作者概不负责哦。**
+**This package is only for PHP extension enthusiasts for the purpose of learning and communication. The author of the package does not participate in injections, and shall not be responsible for any losses caused by the introduction of this package.**
